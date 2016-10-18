@@ -9,7 +9,6 @@
 #include"sebel导数.h"
 #include"均值滤波.h"
 #include "直方图均衡化.h"
-#include "锐化.h"
 
 void drawText(Mat & inputImg, string text);
 

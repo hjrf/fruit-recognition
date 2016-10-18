@@ -14,6 +14,17 @@ public:
 
 private:
 	Ui::MyClassClass ui;
+
+private slots:
+	 void openCapture();
+
+private slots:
+	 void imgProcess();
+
 };
+
+
+
+
 
 #endif // MYCLASS_H

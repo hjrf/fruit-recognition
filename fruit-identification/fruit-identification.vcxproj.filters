@@ -98,9 +98,6 @@
     <ClCompile Include="轮廓长度.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="图像加边.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="myclass.ui">

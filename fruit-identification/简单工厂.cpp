@@ -26,10 +26,6 @@ ImgProcess * SimpleFactory::Create(const std::string & model)
 	{
 		return new HistogramAvg();
 	}
-	else if (model == "Èñ»¯")
-	{
-		return new RuiHua();
-	}
 	else
 	{
 		return NULL;

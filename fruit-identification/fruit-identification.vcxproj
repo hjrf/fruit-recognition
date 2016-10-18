@@ -175,7 +175,6 @@
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="不同图片二值查看.cpp" />
     <ClCompile Include="二值化.cpp" />
-    <ClCompile Include="图像加边.cpp" />
     <ClCompile Include="图像处理.cpp" />
     <ClCompile Include="均值滤波.cpp" />
     <ClCompile Include="灰度化.cpp" />
@@ -205,6 +204,7 @@
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <SubType>Designer</SubType>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
