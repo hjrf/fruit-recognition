@@ -168,12 +168,11 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="hjr_strat.cpp" />
+    <ClCompile Include="laplace算子.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="myclass.cpp" />
     <ClCompile Include="sebel导数.cpp" />
     <ClCompile Include="UI.cpp" />
-    <ClCompile Include="不同图片二值查看.cpp" />
     <ClCompile Include="二值化.cpp" />
     <ClCompile Include="图像处理.cpp" />
     <ClCompile Include="均值滤波.cpp" />
@@ -184,7 +183,9 @@
     <ClCompile Include="调用电脑图片.cpp" />
     <ClCompile Include="调用电脑摄像头.cpp" />
     <ClCompile Include="轮廓长度.cpp" />
+    <ClCompile Include="霍夫线性变换.cpp" />
     <ClCompile Include="颜色识别.cpp" />
+    <ClCompile Include="高斯滤波.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="myclass.ui">
@@ -210,6 +211,7 @@
   <ItemGroup>
     <ClInclude Include="canny边缘检测.h" />
     <ClInclude Include="GeneratedFiles\ui_myclass.h" />
+    <ClInclude Include="laplace算子.h" />
     <ClInclude Include="sebel导数.h" />
     <ClInclude Include="二值化.h" />
     <ClInclude Include="图像处理.h" />
@@ -217,6 +219,8 @@
     <ClInclude Include="灰度化.h" />
     <ClInclude Include="直方图均衡化.h" />
     <ClInclude Include="简单工厂.h" />
+    <ClInclude Include="霍夫线性变换.h" />
+    <ClInclude Include="高斯滤波.h" />
     <CustomBuild Include="myclass.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing myclass.h...</Message>

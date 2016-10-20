@@ -44,9 +44,6 @@
     <ClCompile Include="myclass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="不同图片二值查看.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="二值化.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -86,9 +83,6 @@
     <ClCompile Include="canny边缘检测.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="hjr_strat.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="UI.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -96,6 +90,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="轮廓长度.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="laplace算子.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="高斯滤波.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="霍夫线性变换.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -136,6 +139,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="直方图均衡化.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="laplace算子.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="高斯滤波.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="霍夫线性变换.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

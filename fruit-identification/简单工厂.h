@@ -9,6 +9,9 @@
 #include"sebel导数.h"
 #include"均值滤波.h"
 #include "直方图均衡化.h"
+#include "laplace算子.h"
+#include "高斯滤波.h"
+#include "霍夫线性变换.h"
 
 void drawText(Mat & inputImg, string text);
 

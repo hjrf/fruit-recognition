@@ -1,5 +1,5 @@
 #include"简单工厂.h"
-
+# pragma execution_character_set("UTF-8")
 ImgProcess * SimpleFactory::Create(const std::string & model)
 {
 	if (model == "二值化")
@@ -25,6 +25,18 @@ ImgProcess * SimpleFactory::Create(const std::string & model)
 	else if (model == "直方图均衡化")
 	{
 		return new HistogramAvg();
+	}
+	else if (model == "laplace算子")
+	{
+		return new EdgeLaplace();
+	}
+	else if (model == "高斯滤波")
+	{
+		return new LvboGaoSi();
+	}
+	else if (model == "霍夫线性变换")
+	{
+		return new TransformHuoFu();
 	}
 	else
 	{

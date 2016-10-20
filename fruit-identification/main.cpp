@@ -1,12 +1,13 @@
-#include "myclass.h"
-#include <QTextCodec>
-#include <QtWidgets/QApplication>
-#include<简单工厂.h>
-
-int main(int argc, char *argv[])
-{
-	QApplication a(argc, argv);
-	MyClass w;
-	w.show();
-	return a.exec();
-}
+//#include "myclass.h"
+//#include <QTextCodec>
+//#include <QtWidgets/QApplication>
+//#include<简单工厂.h>
+//
+//int main(int argc, char *argv[])
+//{
+//char * path = "D:\\log.txt";
+//	QApplication a(argc, argv);
+//	MyClass w;
+//	w.show();
+//	return a.exec();
+//}

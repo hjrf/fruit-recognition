@@ -11,14 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MyClass</string>
+   <string>水果识系统 by-hjr</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>40</y>
+      <y>20</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -46,10 +46,10 @@
    <widget class="QPlainTextEdit" name="plainTextEdit">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>40</y>
+      <x>150</x>
+      <y>110</y>
       <width>321</width>
-      <height>291</height>
+      <height>221</height>
      </rect>
     </property>
     <property name="plainText">
@@ -77,6 +77,76 @@
     </property>
     <property name="text">
      <string>pushButton</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>50</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>104</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>170</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>190</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
     </property>
    </widget>
   </widget>
@@ -125,11 +195,59 @@
    <sender>pushButton_2</sender>
    <signal>clicked()</signal>
    <receiver>MyClassClass</receiver>
-   <slot>close()</slot>
+   <slot>imgProcess()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>517</x>
      <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MyClassClass</receiver>
+   <slot>fruitIdentification()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MyClassClass</receiver>
+   <slot>openImg()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>57</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>299</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MyClassClass</receiver>
+   <slot>vadioProcess()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>527</x>
+     <y>236</y>
     </hint>
     <hint type="destinationlabel">
      <x>299</x>

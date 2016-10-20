@@ -14,7 +14,7 @@
 //int drawKey = 0;
 //int main(int argc, char** argv)
 //{
-//	char * path = "D:\\1.txt";
+//	char * path = "D:\\log.txt";
 //	ofstream fout(path);
 //	if (fout) {
 //		fout << "侯金瑞" << endl;
@@ -70,17 +70,15 @@
 //		equalizeHist(hsvSplit[2], hsvSplit[2]);
 //		merge(hsvSplit, imgHSV);
 //		Mat imgBlue;
-//		Mat imgRed;
-//		inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgBlue); //Threshold the image  
-//		inRange(imgHSV, Scalar(160, iLowS, iLowV), Scalar(179, iHighS, iHighV), imgRed); //Threshold the image  
+//		inRange(imgHSV, Scalar(iLowH, iLowS, iLowV), Scalar(iHighH, iHighS, iHighV), imgBlue); //Threshold the image    
 //																									  //开操作 (去除一些噪点)  
 //		Mat element = getStructuringElement(MORPH_RECT, Size(5, 5));
 //		morphologyEx(imgBlue, imgBlue, MORPH_OPEN, element);
-//		morphologyEx(imgRed, imgRed, MORPH_OPEN, element);
+//
 //
 //		//闭操作 (连接一些连通域)  
 //		morphologyEx(imgBlue, imgBlue, MORPH_CLOSE, element);
-//		morphologyEx(imgRed, imgRed, MORPH_CLOSE, element);
+//
 //		int rows = imgBlue.rows;
 //		int cols = imgBlue.cols;
 //		vector <Point> points_blue;
@@ -119,50 +117,21 @@
 //			}
 //		}
 //
-//		for (int i = 0; i < rows; i++)
-//		{
-//			int flag = 0;
-//			for (int j = 0; j < cols; j++)
-//			{
-//				if ((int)imgRed .ptr<uchar>(i)[j] == 255)
-//				{
-//					flag++;
-//					if (flag == 1)
-//					{
-//						Point point;
-//						point.x = j;
-//						point.y = i;
-//						points_red.push_back(point);
-//					}
-//				}
-//				if (flag > 0 && (int)imgRed.ptr<uchar>(i)[j] == 0)
-//				{
-//					Point point;
-//					point.x = j;
-//					point.y = i;
-//					points_red.push_back(point);
-//					break;
-//				}
-//			}
-//		}
-//
 //		RotatedRect box_blue = minAreaRect(Mat(points_blue));
 //		Point2f vertex_blue[4];
-//		RotatedRect box_red = minAreaRect(Mat(points_red));
-//		Point2f vertex_red[4];
+//
 //		box_blue.points(vertex_blue);
-//		box_red.points(vertex_red);
+//
 //		fout << "[" << (int)vertex_blue[0].x << ":" << (int)vertex_blue[0].y << "]" << "[" << (int)vertex_blue[1].x << ":" << (int)vertex_blue[1].y << "]" << "[" << (int)vertex_blue[2].x << ":" << (int)vertex_blue[2].y << "]" << "[" << (int)vertex_blue[3].x << ":" << (int)vertex_blue[3].y << "]" << endl;
 //		cout << "[" << (int)vertex_blue[0].x << ":" << (int)vertex_blue[0].y << "]" << "[" << (int)vertex_blue[1].x << ":" << (int)vertex_blue[1].y << "]" << "[" << (int)vertex_blue[2].x << ":" << (int)vertex_blue[2].y << "]" << "[" << (int)vertex_blue[3].x << ":" << (int)vertex_blue[3].y << "]" << endl;
 //		
-//		Mat huidu;
-//		cvtColor(imgOriginal,huidu, CV_BGR2GRAY);
+//		//Mat huidu;
+//		//cvtColor(imgOriginal,huidu, CV_BGR2GRAY);
 //		
 //		for (int i = 0; i < 4; i++)
 //		{
 //			line(imgBlue, vertex_blue[i], vertex_blue[(i + 1) % 4], Scalar(100, 200, 211), 2, LINE_AA);
-//			line(huidu, vertex_blue[i], vertex_red[(i + 1) % 4], Scalar(100, 200, 211), 2, LINE_AA);
-//			line(imgRed, vertex_red[i], vertex_red[(i + 1) % 4], Scalar(100, 200, 211), 2, LINE_AA);
+//	
 //		}
 //
 //		//if ((int)vertex_blue[0].x >0 && (int)vertex_blue[0].x < 640-300 && (int)vertex_blue[1].x >0 && (int)vertex_blue[1].x <480-150)
@@ -182,7 +151,7 @@
 //		imshow("原图像", imgOriginal); //show the original image  
 //		//imshow("图像矩形片段", imgRect);
 //		
-//		char key = (char)waitKey(300);
+//		char key = (char)waitKey(50);
 //		if (key == 27)
 //			break;
 //	}
